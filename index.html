@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+
      <!-- the title-->
     <title>my web </title>
+
     <!-- icon-->
     <link rel="icon" href="./images/icon.png"
 
-</head>
+ </head>
 <body>
     <!-- header (top of the page)-->
     <header class="center" id="top"> Welcome to my website </header>
@@ -35,7 +38,11 @@
              <h3>Hello, <span>Hi </span>, World!</h3>
                 <!--some text-->
              <p> Lorem ipsum dolor, sit amet consectetur elit. Distinctio animi quos a! Pariatur, 
-                 nisi! Debitis minima eos necessitatibus facere eligend esse velit saepe ipsum in labore. Illo nemo cum aut</p>
+                 nisi! Debitis minima eos necessitatibus facere eligend esse velit saepe ipsum in labore. Illo nemo cum aut
+                </p>
+                <form> 
+                    <input type="text" placeholder="Enter your name" /> 
+                </form>
              
              <button>Say Hello</button>         
         </div>
@@ -73,9 +80,50 @@
                  <h2>Contact me</h2>
                  <p>Feel Free to contact me anytime, anywhere.</p>
              </div>
-
-             
          </section>
+
+         <form>
+           <div class="form-group">
+               <label for="contactName">Your Name</label>
+               <input 
+               type="text" 
+               name="contactName" 
+               id="contactName" 
+               placeholder="Name" 
+           </div>
+
+           <div class="form-group">
+            <label for="contactEmail">Your Email</label>
+            <input type="email" name="contactEmail" id="contactEmail"
+        </div>
+
+        <div class="form-group">
+            <label for="contactEmail">Choose the type</label>
+            <br />
+            <input 
+             type="radio" 
+             name="formType" 
+             id="complaint" 
+             value="complaint" />
+            <label for="">Complaint</label>
+            <br />
+            <input 
+             type="radio" 
+             name="formType" 
+             id="suggestion" 
+             value="suggestion" />
+            <label for="">Suggestion</label>
+        </div>
+        <div class="form-group">
+            <label for="contactMSG">Your MSG</label>
+            <textarea name="contactMSG" id="contactMSG"></textarea>
+        </div>
+
+        <div class="form-group">
+           <button>Send</button>
+        </div>  
+         
+         </form>
      </main>
      <footer class="center">
          Copyright &copy; 2022. Made with <span>&hearts;</span>  By Ghanadeer 
